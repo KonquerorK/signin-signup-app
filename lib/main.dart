@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:login_signin_form/other/app_colors.dart';
 import 'package:login_signin_form/screens/welcome_screen.dart';
+
+import 'screens/signin_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -10,9 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      theme: ThemeData.from(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.secondaryColor)
+      ),
+      // home: WelcomeScreen(),
+      home: SignInScreen(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signin_form/other/app_colors.dart';
 
 import '../other/app_images.dart';
 
@@ -13,7 +14,9 @@ class CustomScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: AppColors.backgroundColor),
         backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       extendBodyBehindAppBar: true,
       body: Stack(

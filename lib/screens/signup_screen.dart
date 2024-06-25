@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_signin_form/other/app_colors.dart';
 import 'package:login_signin_form/other/app_string.dart';
-import 'package:login_signin_form/widgets/welcome_scaffold.dart';
+import 'package:login_signin_form/widgets/custom_scaffold.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});

@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:login_signin_form/other/app_colors.dart';
 import 'package:login_signin_form/screens/signin_screen.dart';
 import 'package:login_signin_form/screens/signup_screen.dart';
+import 'package:login_signin_form/themes/themes.dart';
 
 import '../other/app_string.dart';
 import '../widgets/welcome_button.dart';
-import '../widgets/welcome_scaffold.dart';
+import '../widgets/custom_scaffold.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -50,7 +51,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
         ),
-         const Flexible(
+          Flexible(
           flex: 1,
           child: Align(
             alignment: Alignment.bottomRight,
@@ -63,12 +64,13 @@ class WelcomeScreen extends StatelessWidget {
                     bgColor: Colors.transparent,
                     txtColor: AppColors.primaryColor,
                   )),
-                Expanded(
+                 Expanded(
                   child: WelcomeButton(
                     buttonText: AppStrings.signup,
-                    onTap: SignUpScreen(),
+                    onTap: const SignUpScreen(),
                     bgColor: AppColors.primaryColor,
-                    txtColor: AppColors.secondaryColor,
+                    // txtColor: AppColors.secondaryColor,
+                    txtColor: lightColorScheme.secondary,
                 )),
               ],
             ),

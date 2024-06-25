@@ -8,14 +8,19 @@ class AppStrings {
 
   //for sign up screen
   static const String signupWel = 'Get Started';
+
   static const String fullName = 'Full Name';
   static const String fullNameHint = 'Enter full Name';
+
   static const String email = 'Email';
   static const String emailHint = 'Enter Email';
+
   static const String password = 'Password';
   static const String passwordHint = 'Enter Password';
+
   static const String checkAgree = 'I agree to the processing of ';
-  static const String persData = 'Personal data';
+  static const String processingAgree = 'Please agree to the processing of personnal';
+  static const String procData = 'Processing data';
   static const String signUpWith = 'Sign up with';
   static const String questSignin = 'Already have an account ?';
 
@@ -26,4 +31,8 @@ class AppStrings {
   static const String forgotPass = 'Forgot password?';
   static const String signInWith = 'Sign in with';
   static const String questSignup = 'Don\'t have an account?';
+
+  // for input error
+  static const String emailError = 'Please enter Email';
+  static const String passwordError = 'Please enter Password';
 }
