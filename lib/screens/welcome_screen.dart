@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:login_signin_form/other/app_colors.dart';
+import 'package:login_signin_form/screens/signin_screen.dart';
+import 'package:login_signin_form/screens/signup_screen.dart';
 
 import '../other/app_string.dart';
 import '../widgets/welcome_button.dart';
@@ -31,7 +33,7 @@ class WelcomeScreen extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 45.0,
                         fontWeight: FontWeight.w600,
-                        color: AppColors.primaryColor
+                        color: AppColors.primaryColor,
                       )
                     ),
                     TextSpan(
@@ -54,8 +56,20 @@ class WelcomeScreen extends StatelessWidget {
             alignment: Alignment.bottomRight,
             child: Row(
               children: [
-                Expanded(child: WelcomeButton(buttonText: AppStrings.signin,)),
-                Expanded(child: WelcomeButton(buttonText: AppStrings.signup,)),
+                Expanded(
+                  child: WelcomeButton(
+                    buttonText: AppStrings.signin,
+                    onTap: SignInScreen(),
+                    bgColor: Colors.transparent,
+                    txtColor: AppColors.primaryColor,
+                  )),
+                Expanded(
+                  child: WelcomeButton(
+                    buttonText: AppStrings.signup,
+                    onTap: SignUpScreen(),
+                    bgColor: AppColors.primaryColor,
+                    txtColor: AppColors.secondaryColor,
+                )),
               ],
             ),
           ),

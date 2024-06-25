@@ -1,7 +1,7 @@
 class AppStrings {
 
   // For welcome screen
-  static const String welcomeMsg = 'Welcome Back !\n\n';
+  static const String welcomeMsg = 'Welcome Back!\n\n';
   static const String subMsg = 'Enter personnal details to you employee account';
   static const String signin = 'Sign in';
   static const String signup = 'Sign up';
