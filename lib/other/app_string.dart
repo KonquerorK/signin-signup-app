@@ -19,7 +19,8 @@ class AppStrings {
   static const String passwordHint = 'Enter Password';
 
   static const String checkAgree = 'I agree to the processing of ';
-  static const String processingAgree = 'Please agree to the processing of personnal';
+  static const String processingAgree = 'Please agree to the processing of';
+  static const String persData = 'Personnal data';
   static const String procData = 'Processing data';
   static const String signUpWith = 'Sign up with';
   static const String questSignin = 'Already have an account ?';
@@ -33,6 +34,7 @@ class AppStrings {
   static const String questSignup = 'Don\'t have an account?';
 
   // for input error
+  static const String fullNameError = 'Please enter full Name';
   static const String emailError = 'Please enter Email';
   static const String passwordError = 'Please enter Password';
 }

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login_signin_form/other/app_colors.dart';
 import 'package:login_signin_form/screens/welcome_screen.dart';
 
-import 'screens/signin_screen.dart';
+import 'screens/signup_screen.dart';
+
 
 void main(){
   runApp(const MyApp());
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.secondaryColor)
       ),
-      // home: WelcomeScreen(),
-      home: SignInScreen(),
+      home: const WelcomeScreen(),
+      // home: SignInScreen(),
+      // home: SignUpScreen(),
     );
   }
 }

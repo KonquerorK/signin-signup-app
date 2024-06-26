@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:login_signin_form/other/app_images.dart';
+import 'package:login_signin_form/screens/signup_screen.dart';
 import 'package:login_signin_form/themes/themes.dart';
 import 'package:login_signin_form/widgets/custom_scaffold.dart';
 
@@ -53,7 +54,7 @@ class SignInScreen extends StatelessWidget {
                         ),
                 
                         
-                        const SizedBox(height: 30,),
+                        const SizedBox(height: 45,),
                 
                         TextFormField(
                             validator: (value){
@@ -92,7 +93,7 @@ class SignInScreen extends StatelessWidget {
                             obscuringCharacter: '*',
                             validator: (value){
                               if (value == null || value.isEmpty) {
-                                return AppStrings.emailError;
+                                return AppStrings.passwordError;
                               }
                               return null;
                             },
@@ -118,7 +119,7 @@ class SignInScreen extends StatelessWidget {
                           ),
                      
                         
-                        const SizedBox(height: 30,),
+                        const SizedBox(height: 35,),
                 
                         //for remenber password
                         Row(
@@ -157,7 +158,7 @@ class SignInScreen extends StatelessWidget {
                         ),
                 
                         
-                        const SizedBox(height: 30,),
+                        const SizedBox(height: 35,),
                          SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
@@ -180,7 +181,81 @@ class SignInScreen extends StatelessWidget {
                           ),
                          ),
                 
+                        const SizedBox(height: 35,),
 
+                        const Row(
+                          children: [
+                            Expanded(
+                              child: Divider(
+                                thickness: 0.7,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 0,
+                                horizontal: 10
+                              ),
+                            ),
+                            Text(
+                              AppStrings.signInWith,
+                              style: TextStyle(color: AppColors.textColor),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 0,
+                                horizontal: 10
+                              ),
+                            ),
+                            Expanded(
+                              child: Divider(
+                                thickness: 0.7,
+                                color: Colors.grey,
+                              )
+                            ),
+                          ],
+                        ),
+
+
+                        const SizedBox(height: 35,),
+
+
+                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Image.asset(AppImages.facebookIcon),
+                            Image.asset(AppImages.twitterIcon),
+                            Image.asset(AppImages.googleIcon),
+                            Image.asset(AppImages.appleIcon),
+                          ],
+                        ),
+
+
+                        const SizedBox(height: 35,),
+
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                              AppStrings.questSignup,
+                              style: TextStyle(color: AppColors.textColor),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (e)=>  SignUpScreen())
+                                );
+                              },
+                              child:  Text(
+                                AppStrings.signup,
+                                style: TextStyle(
+                                  color: lightColorScheme.secondary,
+                                  fontWeight: FontWeight.bold
+                                ),),
+                            )
+                          ],
+                        ),
 
                       ],
                     ),
