@@ -22,7 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 - [Welcome Screen](https://mega.nz/file/zRQlSbjA#Tl9K08BC_h3gENH_mWDuOcuOuWUxkILSiy4I148GBjs)
   
 
-<!-- ![Capture d'écran](assets/screenshot/WelcomeScreen_localhost_4932_(iPhone XR).png) -->
+![Capture d'écran](assets/screenshot/WelcomeScreen_localhost_4932_(iPhone XR).png)
 
   
 ### Signup Screen
